@@ -1,5 +1,15 @@
 # Socks5BalancerAsio-mini-build
-the mini build for Socks5BalancerAsio.
+the mini prebuild version for Socks5BalancerAsio.
+
+mini build with : (on archlinux x64)
+```
+cmake -DMINI_BUILD_MODE=1 .
+make
+```
+
+this means, no TestConnect, only pure LoadBalance without smart backend detect.
+
+useful on listen at multi port then stream all tcp connect to a single backend.
 
 
 ---
