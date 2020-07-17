@@ -4,7 +4,17 @@ the mini build for Socks5BalancerAsio.
 
 ---
 
-follow is a template for me (jeremie)
+follow is a fast copy-past deploy template for me (jeremie)
+
+```
+su jeremie
+cd ~
+git clone https://github.com/Lyoko-Jeremie/Socks5BalancerAsio-mini-build.git
+chmod +x ~/Socks5BalancerAsio-mini-build/Socks5BalancerAsio-mini
+exit
+
+```
+
 
 ```
 
@@ -64,6 +74,13 @@ ExecStart=/home/jeremie/Socks5BalancerAsio-mini-build/Socks5BalancerAsio-mini /h
 [Install]
 WantedBy=multi-user.target
 
+
+
+
+systemctl start S5BA
+systemctl enable S5BA
+systemctl status S5BA
+journalctl -exu S5BA
 
 
 ```
